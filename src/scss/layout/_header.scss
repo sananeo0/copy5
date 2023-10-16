@@ -1,0 +1,107 @@
+header {
+    width: 100%;
+    height: 6em;
+
+    .header-top {
+        display: flex;
+        width: 100%;
+
+        .header-top--navmenu {
+            display: flex;
+            justify-content: flex-end;
+            background-color: aliceblue;
+            height: 2em;
+            width: 100%;
+            padding: 0 2rem;
+
+            ul {
+                height: 2em;
+                display: flex;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem 0;
+                    margin-right: 4rem;
+                    height: 2em;
+
+                    &:hover {
+                        border-bottom: 2px solid blue;
+                        transition: 0.1s linear;
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        padding: 1rem 0;
+                        height: 2em;
+                        color: rgba(0, 0, 0, 0.69);
+                        font-size: 1em;
+
+                        &:hover {
+                            transition: 0.3s;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .header-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .header-bottom-left {
+            display: flex;
+            align-items: center;
+
+            a {
+                img {
+                    width: 150px;
+                    height: 70px;
+                }
+            }
+        }
+
+        .header-bottom-middle {
+            display: flex;
+
+            ul {
+                display: flex;
+                margin: 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        padding: 0 2rem;
+                        color: rgba(0, 0, 255, 0.582);
+
+                        &:hover {
+                            transition: 0.3s;
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-bottom-right {
+            width: 10%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            i {
+                color: blue;
+                margin-right: 2rem;
+                font-size: x-large;
+            }
+        }
+    }
+}
